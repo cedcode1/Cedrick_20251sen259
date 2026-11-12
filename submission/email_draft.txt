@@ -1,14 +1,16 @@
 To: eric.maniraguha@auca.ac.rw
-Subject: INSY 8311 Phase 0 Proposal Submission – IRAKOZE PEACE CEDRICK (20251SEN259), Group I
+Subject: INSY 8311 Phase 0 Proposal — IRAKOZE PEACE CEDRICK (20251SEN259), Group I
 Attachment: docs/proposal/ABANYERONDO_Phase0_Proposal_IRAKOZE_PEACE_CEDRICK.pdf
 
 Dear Lecturer Eric Maniraguha,
 
-Please find attached my Phase 0 project proposal for “ABANYERONDO: Community Security Availability and Emergency Assistance System.” My topic is registered in Monday Group I, registration number 22 (automatic check: OK; status: Pending).
+Please find attached my Phase 0 proposal for “ABANYERONDO: Community Security Availability and Emergency Assistance System.”
 
-My project uses Oracle Database and PL/SQL to ingest simulated external personnel status events, verify patrol duty availability, and help citizens find approved security contacts using saved or alternative Rwanda locations. The real research dataset comprises 451 geographic records from a CC BY 4.0 Rwanda administrative-division collection, and the proposed interactive innovation is Oracle APEX.
+My project is registered under Monday Group I (number 22) and the registration currently shows Approved.
 
-GitHub repository: [INSERT ACTUAL REPOSITORY LINK AFTER CREATION]
+Oracle Database and PL/SQL will process simulated external personnel status updates and determine verified community security duty-contact availability. I plan to use a Node.js + Express backend and Handlebars frontend. The research dataset includes 451 Rwanda administrative geographic records; test personnel and duty data will be synthetic.
+
+GitHub repository: https://github.com/cedcode1/Cedrick_20251sen259
 
 Kind regards,
 IRAKOZE PEACE CEDRICK
