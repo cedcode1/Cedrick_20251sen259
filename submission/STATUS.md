@@ -1,25 +1,23 @@
-# Phase 0 Submission Status — 11 November 2026
+# Phase 0 submission status — updated 12 November 2026
 
-## Confirmed: group I registration completed
-- Student: **IRAKOZE PEACE CEDRICK**, ID **20251SEN259**
-- Group: **Monday, Group I**
-- Registration spreadsheet: https://docs.google.com/spreadsheets/d/1_1qbX-viAAwHAzxWR6G_f31yzB6ks7sV1-HgwAgbdVA/edit#gid=631500683&range=A25:O25
-- Assigned registration number **22**, sheet row **25**.
-- Verified account email in registration: **peacecedrickirakoze@gmail.com** (connected Google Drive identity).
-- Topic: **ABANYERONDO: Community Security Availability and Emergency Assistance System**
-- Automatic project check: **OK** (verified after write).
-- Lecturer status: **Pending**, NOT approved.
-- Data source, innovation choice and project description were saved; GitHub URL deliberately left blank because the correct repository does not yet exist.
+## Confirmed
+- Student: **IRAKOZE PEACE CEDRICK** — ID **20251SEN259**
+- Class: **Monday Group I**, registration number **22**, row **25**
+- Registration: https://docs.google.com/spreadsheets/d/1_1qbX-viAAwHAzxWR6G_f31yzB6ks7sV1-HgwAgbdVA/edit#gid=631500683&range=A25:O25
+- Registration date shown: **2026-11-11**; exact registration time not available.
+- Automatic conflict check: **OK**
+- Lecturer decision: **Approved** (verified 12 Nov 2026)
+- Project repository: https://github.com/cedcode1/Cedrick_20251sen259 (public)
+- GitHub link in teacher's spreadsheet: https://github.com/cedcode1/Cedrick_20251sen259.git
+- Planned UI: **Express backend and Handlebars frontend**; Oracle Database and PL/SQL business logic.
 
-## Prepared deliverables
-- 451 real Rwanda administrative geographic records (5 provinces, 30 districts, 416 sectors), verified source attribution, validity checks, separate level CSVs.
-- Proposal (2-page PDF and editable DOCX), 12-slide presentation (PDF and PPTX), research log, proposed database tables and PL/SQL design, Oracle geographic import script, README, and GitHub upload instructions.
+## Materials
+Research log, validated real 451-row Rwanda geographic dataset, Phase 0 proposal (PDF/DOCX), 12-slide presentation (PDF/PPTX), preliminary Oracle import script, scope and innovation notes.
 
-## Still necessary — do not claim completed
-1. **Create and push GitHub repository** with name `irakoze_20251SEN259_abanyerondo`; currently the connected GitHub connector offers file writes to existing repositories, but no create-repository operation. Do not place this capstone into the unrelated `cedcode-platform` private repo.
-2. **Fill GitHub link in Monday Group I cell L25**, then update title slide and email draft with the actual URL. Ensure the repository is public or instructor access granted.
-3. **Email lecturer** `eric.maniraguha@auca.ac.rw` with the two-page proposal and the actual GitHub link. Gmail is not yet connected to the assistant for sending; an email draft is provided.
-4. **Complete reading the full text of two academic research papers** before describing them as fully reviewed.
-5. Monitor approval. Registrar topic check `OK` is not instructor approval.
+## Remaining
+1. Email the corrected proposal PDF and GitHub link to `eric.maniraguha@auca.ac.rw`. No sent-email confirmation has been obtained.
+2. Review full versions of the academic papers before saying the literature review is fully complete.
+3. Verify any binary proposal/presentation changes are synchronized with the Express + Handlebars stack.
+4. Follow subsequent phases released by the lecturer.
 
-Deadline in sheet: **Friday, 13 Nov 2026, 14:00 Africa/Kigali**.
+Registration-sheet deadline: **13 Nov 2026, 14:00 Africa/Kigali**.
