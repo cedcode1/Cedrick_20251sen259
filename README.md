@@ -6,12 +6,13 @@
 **Instructor:** Eric Maniraguha  
 **Academic year:** 2026/2027, Semester I  
 **Phase:** 0 - Research, data source and project proposal
+**Web stack:** Node.js, Express, Handlebars; Oracle Database + PL/SQL.
 
 ## Problem
 Community members may not know which approved local security duty contact to reach during danger, particularly when they are outside their saved home area. A schedule alone is not proof of availability. Irondo is a community-led security arrangement supported through local structures (Rwanda National Police, 2025). We propose a directory of **verified, currently eligible, checked-in duty contacts** with a public search by saved or selected area; the app must never replace formal emergency services.
 
 ## Proposed solution
-An Oracle/PL/SQL platform receives simulated upstream personnel events (hire, transfer, suspension, dismissal) and synchronizes eligibility and assignments without itself recruiting, dismissing, paying or transferring personnel. Authorized shift confirmation establishes operational availability. Citizen-facing Oracle APEX searches a verified area and returns only approved duty contacts. A home location stays saved when searching another area. All personnel/contact and event test fixtures are **synthetic**.
+An Oracle/PL/SQL platform receives simulated upstream personnel events (hire, transfer, suspension, dismissal) and synchronizes eligibility and assignments without itself recruiting, dismissing, paying or transferring personnel. Authorized shift confirmation establishes operational availability. A Node.js/Express backend calls Oracle PL/SQL for approved duty contacts and Handlebars renders citizen-facing location search pages. A citizen can search another location without overwriting a saved home area. A home location stays saved when searching another area. All personnel/contact and event test fixtures are **synthetic**.
 
 ## Objectives
 1. Load and normalize real Rwanda geographic records and maintain source lineage.
@@ -32,7 +33,7 @@ An Oracle/PL/SQL platform receives simulated upstream personnel events (hire, tr
 `PKG_SYNC.apply_event` (idempotency, event ordering, status transitions), `PKG_AVAILABILITY.find_contacts` and `is_available`, audit triggers and restrictions that block duplicate effective events, expired duty status and unauthorized contact disclosure. Exceptions and cursors for validation and area-based reporting.
 
 ## Innovation
-**Oracle APEX interactive user interface** connected to Oracle DB and actual PL/SQL packages. Demo: a simulated transfer or suspension changes the real query results without any UI hardcoded answers.
+**Node.js + Express backend with Handlebars frontend**, using `node-oracledb` to invoke Oracle PL/SQL packages (planned integration). Demo: a simulated transfer or suspension changes the real query results without any UI hardcoded answers.
 
 ## Repository layout
 `docs/research/`, `docs/proposal/`, `docs/presentation/`, `docs/requirements/`, `data/`, `database/`, `innovation/`, `submission/`.
@@ -41,7 +42,7 @@ An Oracle/PL/SQL platform receives simulated upstream personnel events (hire, tr
 This is an academic proof of concept, **not an official Rwandan emergency hotline**. In a real emergency, use official emergency services (112 per https://www.gov.rw/emergency). No real officers' personal details are published.
 
 ## Submission status
-Group I topic registration is complete (number 22, row 25), automatic check OK, lecturer status Pending. GitHub repository creation and lecturer email submission are not yet complete. Target repository name: `irakoze_20251SEN259_abanyerondo` (first-name interpretation of lecturer's naming rule; change if instructed). See `submission/STATUS.md` for the verified registration link and remaining steps.
+Group I topic registration is complete (number 22, row 25), automatic check OK, and lecturer status **Approved** as verified on 12 November 2026. Project repository: https://github.com/cedcode1/Cedrick_20251sen259. Lecturer email submission is not yet verified. See `submission/STATUS.md` for remaining steps.
 
 ## References
 The complete APA research log and source URLs are in `docs/research/research_log.md`.
