@@ -1,0 +1,15 @@
+REGISTRATION COMPLETED AND VERIFIED — 11 NOVEMBER 2026
+Name: IRAKOZE PEACE CEDRICK
+ID: 20251SEN259
+Group: Monday Grp I
+Gmail entered FIRST: peacecedrickirakoze@gmail.com
+Registration number: 22
+Sheet row: 25
+Official registration: https://docs.google.com/spreadsheets/d/1_1qbX-viAAwHAzxWR6G_f31yzB6ks7sV1-HgwAgbdVA/edit#gid=631500683&range=A25:O25
+Title: ABANYERONDO: Community Security Availability and Emergency Assistance System
+Domain: Public Safety and Security
+Dataset: https://github.com/open-admin-data/rwanda-administrative-divisions
+Planned innovation: User interface (APEX, Streamlit, Flask, Java, PHP, .NET) — Oracle APEX proposed
+Automatic check: OK
+Instructor approval: Pending
+GitHub link cell: L25 — BLANK until a project-specific repository is created.
