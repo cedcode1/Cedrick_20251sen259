@@ -20,7 +20,7 @@ A supervisor must confirm attendance before an officer is shown as available to 
 ### Business Process Diagram
 - **Modeling tool:** [draw.io]
 - **Published diagram:** [https://drive.google.com/file/d/1bQXBnggCYtbMAes8nU0PRnqVOEpWF-CB/view?usp=sharing]
-- **Diagram PDF:** [Insert the GitHub link to your diagram PDF]
+- **Diagram PDF:** [https://github.com/cedcode1/Cedrick_20251sen259/blob/main/docs/Business_process/Business_Process_Diagram.pdf]
 
 ### Supporting Explanation
 The explanation document describes the activities, people involved, decisions made, and information used during the process.
