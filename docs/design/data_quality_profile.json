@@ -1,0 +1,216 @@
+{
+  "dataset": "NISR-derived Rwanda administrative hierarchy; source data edition 2019-07",
+  "counts_by_level": {
+    "province": 5,
+    "district": 30,
+    "sector": 416,
+    "cell": 2142,
+    "village": 14816
+  },
+  "total_nested_records": 17409,
+  "source_file_profiles": {
+    "umujyi-wa-kigali.json": {
+      "province": 1,
+      "district": 3,
+      "sector": 35,
+      "cell": 156,
+      "village": 1163
+    },
+    "amajyaruguru.json": {
+      "province": 1,
+      "district": 5,
+      "sector": 89,
+      "cell": 414,
+      "village": 2744
+    },
+    "amajyepfo.json": {
+      "province": 1,
+      "district": 8,
+      "sector": 101,
+      "cell": 532,
+      "village": 3501
+    },
+    "iburasirazuba.json": {
+      "province": 1,
+      "district": 7,
+      "sector": 95,
+      "cell": 502,
+      "village": 3791
+    },
+    "iburengerazuba.json": {
+      "province": 1,
+      "district": 7,
+      "sector": 96,
+      "cell": 538,
+      "village": 3617
+    }
+  },
+  "raw_blob_hashes": {
+    "umujyi-wa-kigali.json": {
+      "bytes": 238722,
+      "git_blob_sha": "6180baef2a84c95d40a31bb9812c4f5c21c4b021",
+      "matches_upstream": true
+    },
+    "amajyaruguru.json": {
+      "bytes": 572832,
+      "git_blob_sha": "ad6a46bdfb9097f5a44a64488a2a8963cf23fce0",
+      "matches_upstream": true
+    },
+    "amajyepfo.json": {
+      "bytes": 729542,
+      "git_blob_sha": "1dc18529c369014d6d9e061cd06fe75290bb3aea",
+      "matches_upstream": true
+    },
+    "iburasirazuba.json": {
+      "bytes": 777670,
+      "git_blob_sha": "a773ed2e9946637dff99d3859aebe8ab09959c3e",
+      "matches_upstream": true
+    },
+    "iburengerazuba.json": {
+      "bytes": 752668,
+      "git_blob_sha": "a8e0b46c19ebf4ce48eaa707a8381948eff61c8f",
+      "matches_upstream": true
+    }
+  },
+  "missing_ids": 0,
+  "duplicate_ids": 0,
+  "missing_names": 0,
+  "invalid_parent_container_refs": 0,
+  "empty_child_arrays": {},
+  "exact_duplicate_records_by_level": {},
+  "duplicate_village_name_groups_within_cell": 7,
+  "duplicate_village_name_examples": [
+    [
+      {
+        "id": "village-41130307",
+        "name": "Rusekabuye",
+        "cell": "Mahaza",
+        "sector": "NTARABANA",
+        "district": "Rulindo",
+        "province": "Amajyaruguru"
+      },
+      {
+        "id": "village-41130308",
+        "name": "Rusekabuye",
+        "cell": "Mahaza",
+        "sector": "NTARABANA",
+        "district": "Rulindo",
+        "province": "Amajyaruguru"
+      }
+    ],
+    [
+      {
+        "id": "village-24140107",
+        "name": "Kigarama",
+        "cell": "Cyarwa",
+        "sector": "Tumba",
+        "district": "Huye",
+        "province": "Amajyepfo"
+      },
+      {
+        "id": "village-24140108",
+        "name": "Kigarama",
+        "cell": "Cyarwa",
+        "sector": "Tumba",
+        "district": "Huye",
+        "province": "Amajyepfo"
+      }
+    ],
+    [
+      {
+        "id": "village-53040201",
+        "name": "Gatoki",
+        "cell": "Kabeza",
+        "sector": "Kabarore",
+        "district": "Gatsibo",
+        "province": "Iburasirazuba"
+      },
+      {
+        "id": "village-53040204",
+        "name": "Gatoki",
+        "cell": "Kabeza",
+        "sector": "Kabarore",
+        "district": "Gatsibo",
+        "province": "Iburasirazuba"
+      }
+    ],
+    [
+      {
+        "id": "village-54020401",
+        "name": "Bara",
+        "cell": "Rubimba",
+        "sector": "Kabare",
+        "district": "Kayonza",
+        "province": "Iburasirazuba"
+      },
+      {
+        "id": "village-54020403",
+        "name": "Bara",
+        "cell": "Rubimba",
+        "sector": "Kabare",
+        "district": "Kayonza",
+        "province": "Iburasirazuba"
+      }
+    ],
+    [
+      {
+        "id": "village-32080104",
+        "name": "Murama",
+        "cell": "Gabiro",
+        "sector": "Musasa",
+        "district": "Rutsiro",
+        "province": "Iburengerazuba"
+      },
+      {
+        "id": "village-32080103",
+        "name": "Murama",
+        "cell": "Gabiro",
+        "sector": "Musasa",
+        "district": "Rutsiro",
+        "province": "Iburengerazuba"
+      }
+    ],
+    [
+      {
+        "id": "village-34100607",
+        "name": "Nyakiriba",
+        "cell": "Tyazo",
+        "sector": "Rugera",
+        "district": "Nyabihu",
+        "province": "Iburengerazuba"
+      },
+      {
+        "id": "village-34100606",
+        "name": "Nyakiriba",
+        "cell": "Tyazo",
+        "sector": "Rugera",
+        "district": "Nyabihu",
+        "province": "Iburengerazuba"
+      }
+    ],
+    [
+      {
+        "id": "village-35080304",
+        "name": "Kazuba",
+        "cell": "Mashya",
+        "sector": "MUHANDA",
+        "district": "Ngororero",
+        "province": "Iburengerazuba"
+      },
+      {
+        "id": "village-35080305",
+        "name": "Kazuba",
+        "cell": "Mashya",
+        "sector": "MUHANDA",
+        "district": "Ngororero",
+        "province": "Iburengerazuba"
+      }
+    ]
+  ],
+  "sector_names_all_uppercase": 44,
+  "village_nep_values": {
+    "GE": 7655,
+    "Microgrid": 2436,
+    "SAS": 4725
+  }
+}
