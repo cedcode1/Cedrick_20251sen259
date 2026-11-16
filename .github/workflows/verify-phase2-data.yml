@@ -1,0 +1,30 @@
+name: Verify Phase II raw dataset
+on:
+  push:
+    paths:
+      - 'scripts/phase2_profile.py'
+      - 'data/raw/provinces/**'
+      - '.github/workflows/verify-phase2-data.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify source hashes and produce counted quality evidence
+        run: |
+          python3 scripts/phase2_profile.py > docs/design/data_quality_profile.json
+          python3 -m json.tool docs/design/data_quality_profile.json > /dev/null
+      - name: Commit audit output when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/design/data_quality_profile.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Phase II reproducible data quality profile"
+            git push
+          fi
