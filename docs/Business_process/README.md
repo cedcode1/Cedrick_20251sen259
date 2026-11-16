@@ -25,4 +25,4 @@ A supervisor must confirm attendance before an officer is shown as available to 
 ### Supporting Explanation
 The explanation document describes the activities, people involved, decisions made, and information used during the process.
 
-- **Explanation PDF:** [Insert the GitHub link to your explanation PDF]
+- **Explanation PDF:** [https://github.com/cedcode1/Cedrick_20251sen259/blob/main/docs/Business_process/Business_Process_Explanation.pdf]
