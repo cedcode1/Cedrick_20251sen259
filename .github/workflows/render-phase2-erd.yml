@@ -1,0 +1,30 @@
+name: Render Phase II ERD PNG
+on:
+  push:
+    paths:
+      - 'docs/design/erd.dot'
+      - '.github/workflows/render-phase2-erd.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Render crow-foot ERD
+        run: |
+          command -v dot || (sudo apt-get update -qq && sudo apt-get install -y graphviz)
+          dot -Tpng -Gdpi=140 docs/design/erd.dot -o docs/design/erd.png
+          test -s docs/design/erd.png
+      - name: Commit generated PNG when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/design/erd.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Render Phase II logical ERD PNG"
+            git push
+          fi

@@ -46,3 +46,16 @@ Group I topic registration is complete (number 22, row 25), automatic check OK, 
 
 ## References
 The complete APA research log and source URLs are in `docs/research/research_log.md`.
+
+## Phase II – Data Sourcing, Normalization and Logical Design
+
+This phase uses five **unchanged raw JSON files** from the NISR-derived 2019 Rwanda administrative hierarchy (CC BY 4.0). The files contain **17,409** real administrative objects: 5 provinces, 30 districts, 416 sectors, 2,142 cells, and 14,816 villages. The six-table 3NF logical design is grounded in these source fields only; officer/duty records remain separate future application data.
+
+- [Unmodified raw files and source notes](data/raw/README.md)
+- [Dataset card: provenance, license, counts and quality findings](data/dataset_card.md)
+- [UNF → 1NF → 2NF → 3NF examples and every field mapping](docs/design/normalization.md)
+- [Logical ERD (PNG)](docs/design/erd.png) · [editable source (DOT)](docs/design/erd.dot)
+- [Logical data dictionary (PK, FK, uniqueness and optionality)](docs/design/data_dictionary.md)
+- [Five-minute demonstration guide](docs/design/README.md)
+
+The dataset has seven repeated village-name groups within the same cell; **no raw file was modified or deduplicated**. Its 2019 source date is a limitation for current real-world operations.

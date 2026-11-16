@@ -1,0 +1,73 @@
+digraph ABANYERONDO_PhaseII {
+  graph [rankdir=TB, bgcolor="white", pad="0.35", nodesep="0.44", ranksep="0.85",
+         splines=polyline, fontname="DejaVu Sans", label="ABANYERONDO  |  Phase II logical ERD\nReal Rwanda administrative locations (2019 source snapshot)", labelloc=t, fontsize=19, fontcolor="#183153"];
+  node [shape=plain, fontname="DejaVu Sans", fontsize=11];
+  edge [color="#47749a", penwidth=1.8, arrowsize=1.05, dir=both, arrowtail=tee, arrowhead=crow, fontsize=10, fontcolor="#375977"];
+
+  SOURCE_SNAPSHOT [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6088ab">
+      <TR><TD BGCOLOR="#173957"><FONT COLOR="white"><B>SOURCE_SNAPSHOT</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">PK  snapshot_id</TD></TR>
+      <TR><TD ALIGN="LEFT">country, source_title</TD></TR>
+      <TR><TD ALIGN="LEFT">source_date, dataset_version</TD></TR>
+      <TR><TD ALIGN="LEFT">source_version, license</TD></TR>
+      <TR><TD ALIGN="LEFT">code_standard, original_filename</TD></TR>
+      <TR><TD ALIGN="LEFT">source_url, original_git_sha</TD></TR>
+    </TABLE>
+  >];
+
+  PROVINCE [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6088ab">
+      <TR><TD BGCOLOR="#21577a"><FONT COLOR="white"><B>PROVINCE</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">PK  province_id</TD></TR>
+      <TR><TD ALIGN="LEFT">province_name</TD></TR>
+      <TR><TD ALIGN="LEFT">FK  snapshot_id</TD></TR>
+    </TABLE>
+  >];
+
+  DISTRICT [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6088ab">
+      <TR><TD BGCOLOR="#21577a"><FONT COLOR="white"><B>DISTRICT</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">PK  district_id</TD></TR>
+      <TR><TD ALIGN="LEFT">district_name</TD></TR>
+      <TR><TD ALIGN="LEFT">FK  province_id</TD></TR>
+    </TABLE>
+  >];
+
+  SECTOR [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6088ab">
+      <TR><TD BGCOLOR="#21577a"><FONT COLOR="white"><B>SECTOR</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">PK  sector_id</TD></TR>
+      <TR><TD ALIGN="LEFT">sector_name</TD></TR>
+      <TR><TD ALIGN="LEFT">FK  district_id</TD></TR>
+    </TABLE>
+  >];
+
+  CELL [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6088ab">
+      <TR><TD BGCOLOR="#21577a"><FONT COLOR="white"><B>CELL</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">PK  cell_id</TD></TR>
+      <TR><TD ALIGN="LEFT">cell_name</TD></TR>
+      <TR><TD ALIGN="LEFT">FK  sector_id</TD></TR>
+    </TABLE>
+  >];
+
+  VILLAGE [label=<
+    <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6" COLOR="#6088ab">
+      <TR><TD BGCOLOR="#21577a"><FONT COLOR="white"><B>VILLAGE</B></FONT></TD></TR>
+      <TR><TD ALIGN="LEFT">PK  village_id</TD></TR>
+      <TR><TD ALIGN="LEFT">village_name</TD></TR>
+      <TR><TD ALIGN="LEFT">source_nep</TD></TR>
+      <TR><TD ALIGN="LEFT">FK  cell_id</TD></TR>
+    </TABLE>
+  >];
+
+  SOURCE_SNAPSHOT -> PROVINCE [xlabel="1 : 0..*"];
+  PROVINCE -> DISTRICT [xlabel="1 : 0..*"];
+  DISTRICT -> SECTOR [xlabel="1 : 0..*"];
+  SECTOR -> CELL [xlabel="1 : 0..*"];
+  CELL -> VILLAGE [xlabel="1 : 0..*"];
+
+  NOTE [shape=note, fontcolor="#576b81", color="#b6c7d4", label="Only relationships backed by real raw geography.\nPersonnel, patrol duty and citizen records are separate future app data.\nCrow foot = many; tee = exactly one. Child FK is required."];
+  VILLAGE -> NOTE [style=invis];
+}
